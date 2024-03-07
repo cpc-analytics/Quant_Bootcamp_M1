@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+// fonts
+$font-family-sans-serif: "Noto Sans", sans-serif;
+
+// colors
+$body-bg: #d7e8ef;
+$body-color: #000000;
+$link-color: #97CA94;
+$code-block-bg: #ffffff;
+$code-block-border-color: #a0a0a0;
+
+
+// headings
+$presentation-heading-font: "Noto Sans", sans-serif;
+$presentation-heading-color: #000000;
+
+/*-- scss:rules --*/

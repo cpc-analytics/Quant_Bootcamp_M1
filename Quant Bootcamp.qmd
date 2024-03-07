@@ -1,0 +1,34 @@
+---
+title: "Quant Bootcamp"
+author: "Sahil Deo and Jayati Sharma"
+format: 
+  revealjs:
+    embed-resources: true
+    slide-number: c/t
+    width: 1400
+    theme: [serif, mytheme.css]
+
+editor: visual
+---
+
+## About CPC
+
+## About You
+
+## Why Quant Bootcamp?
+
+## Why R? - The power of R
+
+## R Installation
+
+## R Projects
+
+## Packages and Libraries
+
+## Objects in R
+
+## Data manipulation in R
+
+## Pipe Operators in R
+
+## 

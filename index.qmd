@@ -1,0 +1,14 @@
+---
+title: "Quant Bootcamp - Module 1"
+format: html
+---
+
+### About CPC
+
+### What is Quant Bootcamp
+
+### Installing R
+
+### Resources
+
+[Slides](Quant Bootcamp.html)
