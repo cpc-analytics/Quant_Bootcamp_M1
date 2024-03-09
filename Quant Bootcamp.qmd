@@ -11,24 +11,167 @@ format:
 editor: visual
 ---
 
-## About CPC
+## About CPC{.scrollable}
 
-## About You
+## A Little About You{.scrollable}
 
-## Why Quant Bootcamp?
++ Your name
++ Your profession
++ Have you learnt any programming language/coded before?
++ Anything more you would like to share :)
 
-## Why R? - The power of R
+## Why Quant Bootcamp?{.scrollable}
 
-## R Installation
+## Why R? - The power of R{.scrollable}
 
-## R Projects
+## Opening R{.scrollable}
 
-## Packages and Libraries
++ This is what your RStudio screen looks like
 
-## Objects in R
+![Source : [University of Melbourne](https://2953482177-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M38c0s4s0YCM6dGwrz1%2F-M3_0fMRKDq8Uvu5TFRD%2F-M3_FZ86_WIA8-oRtkqy%2Fanatomy%20of%20rstudio.png?alt=media&token=5ae7472d-d64f-4f3c-a4f1-cd6b5d31cebd)](https://2953482177-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M38c0s4s0YCM6dGwrz1%2F-M3_0fMRKDq8Uvu5TFRD%2F-M3_FZ86_WIA8-oRtkqy%2Fanatomy%20of%20rstudio.png?alt=media&token=5ae7472d-d64f-4f3c-a4f1-cd6b5d31cebd)
 
-## Data manipulation in R
+## Objects in R{.scrollable}
 
-## Pipe Operators in R
++ [The most common type of object in R is `vector`]{.fragment fragment-index="1"}
 
-## 
++ [Vectors can store all types of data: integers, characters, logical]{.fragment fragment-index="2"}
+
+::: {.fragment fragment-index="3"}
+```{r vector_integer}
+#| eval: true
+#| echo: true
+
+id <- c(1,2,3,4,5)
+id
+```
+:::
+
++ [Similarly, another vector with characters can be made]{.fragment fragment-index="4"}
+
+::: {.fragment fragment-index="5"}
+```{r vector_character}
+#| eval: true
+#| echo: true
+
+name <- c("John", "Mary", "Cal", "Jess","Sam")
+name
+```
+:::
+
+## Objects in R{.scrollable}
+
++ [Factor object encodes a vector of unique elements into levels]{.fragment fragment-index="1"}
+
+::: {.fragment fragment-index="2"}
+```{r vector_factors}
+#| eval: true
+#| echo: true
+
+score <- c("Very Bad", "Bad", "Neutral", "Good","Very Good")
+print(factor(score))
+```
+:::
+
++ [Can you try making a vector called `age` with 5 values?]{.fragment fragment-index="3"}
+
+::: {.fragment fragment-index="4"}
+```{r vector_age}
+#| eval: true
+#| echo: true
+
+age <- c(19, 21, 15, 25,23)
+age
+```
+:::
+
+## Objects in R{.scrollable}
+
++ Dataframes are tabular data objects
++ Each column in a dataframe is a vector
++ You can create a dataframe using the vectors you just created
+
+```{r vector_dataframe}
+#| eval: true
+#| echo: true
+
+dataframe1 <- data.frame(id, name, score, age)
+dataframe1
+```
+
+## R Projects{.scrollable}
+#### [Content for this topic has been sourced from [Danielle Navarro's workshop](https://djnavarro.net/chdss2018/day2/projects.html). Please check out her [work](https://djnavarro.net/chdss2018/) for detailed information.]{style="font-size:13px"}
+
+
+**What?**
+
++ For organising files in a project
++ A tool to track your project
+
+> In their own words, [RStudio](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects) projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents
+
+**Why**
+
++ Although R keeps track of various different events that have happened but it has no idea which events are associated with  particular project
+
++ ***Convenience***
+  - Keeps things tidy and smooths the process
++ ***Functionality***
+  - An RStudio project creates a `.Rproj` file that links the different scripts, data sets, etc within a particular folder on your computer
+  - Also makes it easier to share code with others
+
+## R Projects{.scrollable}
+#### [Content for this topic has been sourced from [Danielle Navarro's workshop](https://djnavarro.net/chdss2018/day2/projects.html). Please check out her [work](https://djnavarro.net/chdss2018/) for detailed information.]{style="font-size:13px"}
+
+**How?**
+
+::: panel-tabset
+
+### 1. Create Project
+
+Go to the the little blue menu in the top the top right corner in RStudio, click on the dropdown menu, and select 'New Project'
+
+![](https://becker.wustl.edu/wp-content/uploads/Screen-Shot-2021-04-29-at-12.02.40-PM.png)
+
+### 2. Select Directory
+
+You can either:
+
++ Choose to open a project in a new directory
++ Or choose to work in an existing directory
+
+![](https://www.rstudio.com/images/docs/projects_new.png)
+
+### 3. Voilà!
+
+Once you’ve created the project, if you have a look at the folder in Windows Explorer / Mac Finder in the respective directory, you’ll see your file!
+
+![](https://djnavarro.net/chdss2018/day2/images/new_rstudio_project4.jpg)
+:::
+
+## Packages and Libraries{.scrollable}
+
+::: columns
+::: {.column width="60%"}
+
++ When using R, you will be writing functions to perform operations
++ Essentially, a package is a collection of functions
++ You need to install a package only once using `install.package`
++ However, you need to `load` it every session
+
+:::
+
+::: {.column width="40%"}
+![Source: [Allison Horst](https://allisonhorst.com/allison-horst)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b467ee99-87e3-4663-ae27-aaf027f940ce_rw_1920.png?h=0573cb8b960ba2f2c8486188761f03e0)
+
+:::
+:::
+
+## Data Wrangling in R{.scrollable}
+
+**What?**
+
+**Why?**
+
+**How?**
+
+## Pipe Operators in R{.scrollable}
