@@ -170,8 +170,149 @@ Once you’ve created the project, if you have a look at the folder in Windows E
 
 **What?**
 
++ While exploring your data, you would want to transform your data to understand the variables
++ This process of transforming and manipulating data is called data wrangling
+
 **Why?**
+
++ Because you almost never will get data that is not in the format you want it in: you need to modify the variables, delete, add new etc
++ To do exploratory analysis, you need to understand how to transform variables
+
+## Data Wrangling in R{.scrollable}
 
 **How?**
 
-## Pipe Operators in R{.scrollable}
++ The `dplyr` package consists of many functions that help with data manipulation
+
+```{r dplyr_load}
+#| eval: true
+#| echo: true
+
+## loading libraries
+library(dplyr) #for data manipulation
+library(ISLR2) #for dataset
+```
+
+## Loading your dataset{.scrollable}
+
++ We will use the `Carseats` dataset for this topic
+
+```{r dplyr_load_dataset}
+#| eval: true
+#| echo: true
+
+ISLR2::Carseats
+```
+
+## Viewing your dataset{.scrollable}
+
+```{r dplyr_view}
+#| eval: true
+#| echo: true
+
+Carseats <- ISLR2::Carseats
+
+head(Carseats) #see first 6 obervations
+tail(Carseats) #see last 6 observations
+```
+
+## Viewing a variable{.scrollable}
+
++ You can also view a particular variable using
+
+```{r variable_view}
+#| eval: true
+#| echo: true
+
+Carseats$Urban
+```
+
+## Select Your Variables{.scrollable}
+
+**Task** - You want to select certain variables from your `Carseats` dataset
+
+**Solution** - `select()` function 
+
++ You can select any variable you want by specifying
+
+```{r dplyr_select}
+#| eval: true
+#| echo: true
+
+select(Carseats, Sales, CompPrice, Price, Population)
+```
+
++ Alternatively, you can select what you **do not** want
+
+```{r dplyr_select1}
+#| eval: true
+#| echo: true
+
+select(Carseats, -US, -Sales, -Population)
+```
+
++ Moreover, you can select by type of variable
+
+```{r dplyr_select2}
+#| eval: true
+#| echo: true
+
+select(Carseats, where(is.numeric))
+```
+
+## Hold Up...
+
+::: incremental
+
++ How are the results of your functions stored?
++ You see them in the console, but they are not saved to the dataframe
++ To save your changes as a dataframe, either existing one or new one, you can specify the name
+
+::: incremental
+```{r dplyr_save2}
+#| eval: true
+#| echo: true
+
+carseats_selected <- select(Carseats, where(is.numeric))
+```
+:::
+:::
+
+## Rename Your Variable{.scrollable}
+
+**Task** - You want to rename certain variables from your `Carseats` dataset
+
+**Solution** - `rename`()` function
+
++ Suppose you want to rename `CompPrice` and `ShelveLoc` variables
+
+```{r dplyr_rename}
+#| eval: true
+#| echo: true
+
+rename(Carseats, competitor_price = CompPrice, shelving_location = ShelveLoc)
+```
+
+## Arrange Your Variable{.scrollable}
+
+**Task** - You want to arrange some variables from `Carseats` dataset
+
+**Solution** - `arrange`()` function
+
++ Suppose you want to arrange the `Price` variable in ascending order
+
+```{r dplyr_arrange}
+#| eval: true
+#| echo: true
+
+arrange(Carseats, Price)
+```
+
++ But what if you wanted to arrange it in descending order?
+
+```{r dplyr_arrange2}
+#| eval: true
+#| echo: true
+
+arrange(Carseats, -Price)
+```
