@@ -316,3 +316,101 @@ arrange(Carseats, Price)
 
 arrange(Carseats, -Price)
 ```
+
+## Create a New Variable{.scrollable}
+
+**Task** - You want to create a new variable from some existing variable some from `Carseats` dataset
+
+**Solution** - `mutate`()` function
+
++ Suppose you want to want to find per capita income of a region (income/total population)
+
+```{r dplyr_mutate}
+#| eval: true
+#| echo: true
+
+mutate(Carseats, per_capita_income = ((Income*1000)/Population))
+```
+
+## Filter your data{.scrollable}
+
+**Task** - You want to filter parts of your data that meet some criteriafrom `Carseats` dataset
+
+**Solution** - `filter`()` function
+
++ Let us take a look at the different types of filters
+
+::: panel-tabset
+
+### More than filter
+
++ Filtering cases where `Price` is more than or equal to 120
+
+```{r dplyr_filter1}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Price >= 120)
+```
+
+### Less than filter
+
++ Filtering cases where `Sales` is more less than or equal to 8
+
+```{r dplyr_filter2}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Sales <= 8)
+```
+
+### AND filter
+
++ How about we combine both these conditions?
+
+```{r dplyr_filter3}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Price >= 120 & Sales <= 8)
+```
+
+:::
+
+## Filter your data{.scrollable}
+
+::: panel-tabset
+
+### OR filter
+
++ Or how about wanting to filter data on either one of these conditions?
+
+```{r dplyr_filter4}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Price >= 120 | Sales <= 8)
+```
+
+### Equal to filter
+
++ What if you want to filter data when variables are equal to some criteria?
+
+```{r dplyr_filter5}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Price == 100)
+```
+
+### Not equal to filter
+
++ What if you want to filter data when variables are **not** equal to some criteria?
+
+```{r dplyr_filter6}
+#| eval: true
+#| echo: true
+
+filter(Carseats, Price != 100)
+```
+:::
