@@ -414,3 +414,18 @@ filter(Carseats, Price == 100)
 filter(Carseats, Price != 100)
 ```
 :::
+
+## Your Turn!{.scrollable}
+
++ Load the `Credit` data from `ISLR2` package
++ Select only the variables `Income`, `Rating`, `Education` and `Married` from `Credit` dataset and save the results as a new dataframe called `Credit_selected`
++ In `Credit_selected`, arrange the dataset in descending order of `Income` and save this as `Credit_renamed`
++ Rename `Rating` as `Credit_Rating` in `Credit_renamed` dataset
++ From `Credit_renamed`, create two new variable such that"
+  - `Balance_Card` by dividing the `Balance` by `Cards` from `Credit_renames`
+  - `Remaining` by subtracting `Income` from `Limit`
+Save the results as `Credit_mutate`
++ From `Credit_mutate`, filter observations where `Limit` is between 5,000 to 10,000 and `Cards` = 3
+
+## Let's Make Things Easier!
+
