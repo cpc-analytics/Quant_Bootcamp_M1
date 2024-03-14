@@ -1,0 +1,12 @@
+---
+title: "Quant Bootcamp"
+author: "Sahil Deo and Jayati Sharma"
+format: 
+  revealjs:
+    embed-resources: true
+    slide-number: c/t
+    width: 1400
+    theme: [serif, mytheme.css]
+
+editor: visual
+---
