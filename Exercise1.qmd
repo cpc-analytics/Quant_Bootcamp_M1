@@ -1,0 +1,24 @@
+## Exercise 1
+
+```{r setup, include=FALSE}
+#| eval: true
+#| echo: false
+
+library(dplyr)
+library(openintro)
+```
+
+## Solve the following questions:
+
+1. Load the `census` data from `openintro` package, along with appropriate packages
+2. Is there a way to select only numeric variables from the dataset?
+3. How would you go about selecting your data in such that you get the 3rd to 6th variables?
+4. Create a variable called `total_income` by combining personal and family income
+5. In 2000, how many people from California were above the age of 20?
+6. How many females have a personal income more than 35,000 but less than 50,000?
+7. Calculate the mean personal income by race
+8. How would you count the number of males and females?
+9. What is the total family income of each gender?
+10. How many people above the age of 40 are married? How many are divorced?
+11. What is the sex composition in Florida?
+12. How would you find the group of people for whom either the family income is above 100000 or their personal income is above 100000?
