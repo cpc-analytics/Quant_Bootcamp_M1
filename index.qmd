@@ -27,9 +27,9 @@ You can install RStudio from [this](https://posit.co/download/rstudio-desktop/) 
 
 **Day 1**
 
- + Slides(Quant_Bootcamp_D1.html)
- + Exercises 1(Exercise1.html)
- + Exercises 2(Exercise2.html)
+ + [Slides](Quant_Bootcamp_D1.html)
+ + [Exercises 1](Exercise1.html)
+ + [Exercises 2](Exercise2.html)
  
 **Day 2**
 
