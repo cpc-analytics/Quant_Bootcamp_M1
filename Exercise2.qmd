@@ -1,0 +1,25 @@
+## Exercise 2
+
+```{r setup, include=FALSE}
+#| eval: true
+#| echo: false
+
+library(dplyr)
+library(openintro)
+```
+
+## Solve the following questions:
+
+Load the following datasets from the `openintro` package:
+`census`,`sowc_child_mortality`, `sowc_demographics`, `sowc_maternal_newborn`
+
+1. How would you remove NA values from personal income variable in `census` data
+2. Is it possible to see only the 25th to 35th observations of the `census` data? How?
+3. How would you find the mean total income for every person in the `census` dataset?
+4. Join `sowc_demographics` and `sowc_child_mortality` in such a way that you have three variables: countries, life expectancy of 2018 and under5 mortality in 2018. Lets call this new dataset `joined_data`
+5. To the previous question, now do a left join with `sowc_maternal_newborn` dataset
+6. From `sowc_demographics`, create a variable called `mean_life_exp` that calculates the mean life expectancy of 1970, 2000 and 2018
+7. Make a bar chart of top 12 countries having the highest `mean_life_exp` with appropriate formatting
+8. How would you find out which countries that are present in `sowc_maternal_newborn` are not present in `sowc_child_mortality`
+9. How would you find the highest personal income for each race?
+10. In the `sowc_demographics` dataset, is there a way by which you can fill the NA values in the `under18_pop_2018` with a 0
