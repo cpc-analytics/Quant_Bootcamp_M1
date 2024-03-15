@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quant Bootcamp - Module 1</title>
+<title>exercise2_d1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Exercise2_D1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Exercise2_D1_files/libs/quarto-html/quarto.js"></script>
+<script src="Exercise2_D1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Exercise2_D1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Exercise2_D1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Exercise2_D1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Exercise2_D1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Exercise2_D1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Exercise2_D1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Exercise2_D1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -43,61 +43,26 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Quant Bootcamp - Module 1</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="about-cpc" class="level3">
-<h3 class="anchored" data-anchor-id="about-cpc">About CPC</h3>
-<p>Founded in 2014, CPC Analytics is a data-driven public policy consulting firm. It has offices in Berlin &amp; Pune.</p>
-<p>Bringing together qualitative and quantitative research methods, CPC’s team of economists, social scientists, and software engineers support public sector organizations and businesses to undertake policy research and collect, analyze and visualize data.</p>
-<p><a href="www.cpc-analytics.com">Website</a></p>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
 </section>
-<section id="what-is-quant-bootcamp" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-quant-bootcamp">What is Quant Bootcamp</h3>
-<p>As people in the social science space increasingly rely on evidence-based strategies to address societal challenges, the need for social scientists who are proficient in both qualitative and quantitative methodologies has never been more apparent.</p>
-<p>Traditionally, social scientists have tended to specialize in either qualitative or quantitative methods. While qualitative research provides rich insights, quantitative analysis offers the rigor and evidence necessary for making informed decisions and policy recommendations. To bridge this gap, CPC Analytics’ Quant Bootcamp 2024 is designed in such a way that will equip participants with relevant data analysis skills.</p>
-<p>Welcome to Module 1 of Quant Bootcamp! The aim of organising this module to introduce participants to R and basics of data wrangling and data visualization in R</p>
-</section>
-<section id="installing-r" class="level3">
-<h3 class="anchored" data-anchor-id="installing-r">Installing R</h3>
-<p>You can install RStudio from <a href="https://posit.co/download/rstudio-desktop/">this</a> link</p>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<p><strong>Day 1</strong></p>
-<ul>
-<li><a href="Quant_Bootcamp_D1.html">Slides</a></li>
-<li><a href="Exercise1.html">Exercises 1</a></li>
-<li><a href="Exercise2.html">Exercises 2</a></li>
-</ul>
-<p><strong>Day 2</strong></p>
-<ul>
-<li>Slides</li>
-<li>Exercises 1</li>
-<li>Exercises 2</li>
-</ul>
-</section>
-<section id="additional-resources" class="level3">
-<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
-<p><strong>Day 1</strong></p>
-<ul>
-<li><a href="https://r4ds.hadley.nz">R for Data Science (2e)</a></li>
-<li><a href="https://djnavarro.net/chdss2018/resources.html#day-2">Danielle Navarro’s Workshop Slides</a></li>
-</ul>
+<section id="solve-the-following-questions" class="level2">
+<h2 class="anchored" data-anchor-id="solve-the-following-questions">Solve the following questions:</h2>
+<p>Load the following datasets from the <code>openintro</code> package: <code>census</code>,<code>sowc_child_mortality</code>, <code>sowc_demographics</code>, <code>sowc_maternal_newborn</code></p>
+<ol type="1">
+<li>How would you remove NA values from personal income variable in <code>census</code> data</li>
+<li>Is it possible to see only the 25th to 35th observations of the <code>census</code> data? How?</li>
+<li>How would you find the mean total income for every person in the <code>census</code> dataset?</li>
+<li>Join <code>sowc_demographics</code> and <code>sowc_child_mortality</code> in such a way that you have three variables: countries, life expectancy of 2018 and under5 mortality in 2018. Lets call this new dataset <code>joined_data</code></li>
+<li>To the previous question, now do a left join with <code>sowc_maternal_newborn</code> dataset</li>
+<li>From <code>sowc_demographics</code>, create a variable called <code>mean_life_exp</code> that calculates the mean life expectancy of 1970, 2000 and 2018</li>
+<li>Make a bar chart of top 12 countries having the highest <code>mean_life_exp</code> with appropriate formatting</li>
+<li>How would you find out which countries that are present in <code>sowc_maternal_newborn</code> are not present in <code>sowc_child_mortality</code></li>
+<li>How would you find the highest personal income for each race?</li>
+<li>In the <code>sowc_demographics</code> dataset, is there a way by which you can fill the NA values in the <code>under18_pop_2018</code> with a 0</li>
+</ol>
 </section>
 
 </main>

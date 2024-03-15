@@ -36,3 +36,11 @@ You can install RStudio from [this](https://posit.co/download/rstudio-desktop/) 
  + Slides
  + Exercises 1
  + Exercises 2
+ 
+### Additional Resources
+
+**Day 1**
+
+ + [R for Data Science (2e)](https://r4ds.hadley.nz)
+ + [Danielle Navarro's Workshop Slides](https://djnavarro.net/chdss2018/resources.html#day-2)
+ 
