@@ -242,7 +242,7 @@ ggplot(data = <DATA>) +
 ::: columns
 ::: {.column width="50%"}
 
-Continuous Variable
+**Continuous Variable**
 
 Plotting histogram of carat
 
@@ -257,7 +257,9 @@ ggplot(data = diamonds) +
 
 ::: {.column width="50%"}
 
-Discrete Variable
+**Discrete Variable**
+
+Plotting a bar chart for cut
 
 ```{r discrete_var}
 #| eval: true
@@ -364,11 +366,13 @@ diamonds |>
 #| echo: true
 #| output-location: column
 
-diamonds |>
+p1 <- diamonds |>
   group_by(cut) |>
   summarise(mean_carat = mean(carat)) |>
   ggplot(aes(x = cut, y = mean_carat))+
   geom_col(width = 0.70, fill = "#9ac5db")
+
+p1
 ```
 
 ### Reorder your Plot
@@ -378,11 +382,13 @@ diamonds |>
 #| echo: true
 #| output-location: column
 
-diamonds |>
+p2 <- diamonds |>
   group_by(cut) |>
   summarise(mean_carat = mean(carat)) |>
   ggplot(aes(x = reorder(cut, mean_carat), y = mean_carat))+
   geom_col(width = 0.70, fill = "#9ac5db")
+
+p2
 ```
 
 ### Labels
@@ -392,7 +398,7 @@ diamonds |>
 #| echo: true
 #| output-location: column
 
-diamonds |>
+p3 <- diamonds |>
   group_by(cut) |>
   summarise(mean_carat = mean(carat)) |>
   ggplot(aes(x = reorder(cut, mean_carat), y = mean_carat))+
@@ -402,6 +408,8 @@ diamonds |>
        y = "Mean Carat",
        x = "Quality of the Cut",
        caption = "Data Source : diamonds | Analysis by Particpant")
+
+p3
 ```
 
 ### Coord_flip()
@@ -411,7 +419,7 @@ diamonds |>
 #| echo: true
 #| output-location: column
 
-diamonds |>
+p4 <- diamonds |>
   group_by(cut) |>
   summarise(mean_carat = mean(carat)) |>
   ggplot(aes(x = reorder(cut, mean_carat), y = mean_carat))+
@@ -423,13 +431,72 @@ diamonds |>
        caption = "Data Source : diamonds | Analysis by Particpant")+
   coord_flip()+
   theme_minimal()
+
+p4
 ```
 
 :::
 
 ## Line Chart - Showing Trends Over Time{.scrollable}
 
++ Use the `txhousing` data from `ggplot2`
+
 ```{r line_chart}
+
+txhousing |>
+  drop_na(sales) |>
+  group_by(year) |>
+  summarise(total_sales = sum(sales)) |>
+  ggplot(aes(x = year, y = total_sales))+
+  geom_line(colour = "darkred")
+```
+
+## Patchwork - Combine your plots{.scrollable}
+#### [Content for this topic has been sourced from [patchwork](https://patchwork.data-imaginist.com/index.html). Please check out the work for detailed information.]{style="font-size:15px"}
+
++ After making all your plots, you can combine them using `patchwork`
+
+```{r patchwork_load}
+#| eval: true
+#| echo: true
+
+library(patchwork)
+```
+
++ It simply combines all your plots the way you want
+
+```{r patchwork_intro}
+#| eval: true
+#| echo: true
+
+p1 + p2 + p3+ p4
+```
+
+## Patchwork - Combine your plots{.scrollable}
+#### [Content for this topic has been sourced from [patchwork](https://patchwork.data-imaginist.com/index.html). Please check out the work for detailed information.]{style="font-size:15px"}
+
++ You can combine your plots in many ways
+
+```{r patchwork_1}
+#| eval: true
+#| echo: true
+
+p1 / p4
+```
+
++ Annotations can be also added 
+
+```{r patchwork_2}
+#| eval: true
+#| echo: true
+
+my_patchwork <- (p1 + p2)/(p3 + p4)
+
+my_patchwork + plot_annotation(
+  title = 'How I formatted my plots',
+  subtitle = 'I used patchwork to format my plots',
+  caption = 'Author: Participant')
 
 ```
 
+## Thank You{.scrollable}
