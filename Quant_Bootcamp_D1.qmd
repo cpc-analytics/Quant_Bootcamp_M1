@@ -19,7 +19,7 @@ editor: visual
 -   CPC’s team of economists, social scientists, and software engineers support public sector organizations and businesses to undertake policy research and collect, analyze and visualize data
 -   Select clients: WHO, GIZ, Save the Children, SIEMENS
 
-www.cpc-analytics.com
+[www.cpc-analytics.com](www.cpc-analytics.com)
 :::
 
 ## A Little About You {.scrollable}
@@ -295,7 +295,7 @@ carseats_selected <- select(Carseats, where(is.numeric))
 
 **Task** - You want to rename certain variables from your `Carseats` dataset
 
-**Solution** - `rename`()\` function
+**Solution** - `rename()` function
 
 -   Suppose you want to rename `CompPrice` and `ShelveLoc` variables
 
@@ -310,7 +310,7 @@ rename(Carseats, competitor_price = CompPrice, shelving_location = ShelveLoc)
 
 **Task** - You want to arrange some variables from `Carseats` dataset
 
-**Solution** - `arrange`()\` function
+**Solution** - `arrange()` function
 
 -   Suppose you want to arrange the `Price` variable in ascending order
 
@@ -334,7 +334,7 @@ arrange(Carseats, -Price)
 
 **Task** - You want to create a new variable from some existing variable some from `Carseats` dataset
 
-**Solution** - `mutate`()\` function
+**Solution** - `mutate()` function
 
 -   Suppose you want to want to find per capita income of a region (income/total population)
 
@@ -349,7 +349,7 @@ mutate(Carseats, per_capita_income = ((Income*1000)/Population))
 
 **Task** - You want to filter parts of your data that meet some criteriafrom `Carseats` dataset
 
-**Solution** - `filter`()\` function
+**Solution** - `filter()` function
 
 -   Let us take a look at the different types of filters
 
