@@ -22,4 +22,4 @@ Load the following datasets from the `openintro` package:
 7. Make a bar chart of top 12 countries having the highest `mean_life_exp` with appropriate formatting
 8. How would you find out which countries that are present in `sowc_maternal_newborn` are not present in `sowc_child_mortality`
 9. How would you find the highest personal income for each race?
-10. In the `sowc_demographics` dataset, is there a way by which you can fill the NA values in the `under18_pop_2018` with a 0
+10. In the `sowc_demographics` dataset, is there a way by which you can fill the NA values in the `under18_pop_2018` with a

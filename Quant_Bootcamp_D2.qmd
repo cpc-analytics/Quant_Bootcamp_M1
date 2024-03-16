@@ -3,108 +3,98 @@ title: "Quant Bootcamp"
 author: "Sahil Deo and Jayati Sharma"
 format: 
   revealjs:
-    embed-resources: true
-    slide-number: c/t
+    embed+resources: true
+    slide+number: c/t
     width: 1400
     theme: [serif, mytheme.css]
 
 editor: visual
 ---
 
-## Effective Data Visualization - Why{.scrollable}
+## Effective Data Visualization - Why {.scrollable}
 
-+ Data visualization is not a tool, it is a means for communicating results
-+ The communicator needs to bring the story visually and contextually to life
-+ Requires skill to make graphs that conveys the in an effective manner
-+ You want to make the entire audience take away the same thing from your visualization
-+ To understand what effective visualizations are, let us take a look at some examples which are not effective
+   Data visualization is not a tool, it is a means for communicating results
+-   The communicator needs to bring the story visually and contextually to life
+-   Requires skill to make graphs that conveys the in an effective manner
+-   You want to make the entire audience take away the same thing from your visualization
+-   To understand what effective visualizations are, let us take a look at some examples which are not effective
 
-## Say no to 3D graphs!{.scrollable}
-
-::: columns
-::: {.column width="50%"}
-
-+ 3D graphs makes the visualizations redundant and complex for no reason
-+ The bars at the front hide the ones at the back.
-+ Other than looking flashy, they almost never serve the purpose of conveying information
-+ The tilt makes it even more difficult to read the values
-:::
-
-::: {.column width="50%"}
-
-![Source: [Old Street Solutions](https://www.oldstreetsolutions.com/good-and-bad-data-visualization)](https://www.oldstreetsolutions.com/wp-content/uploads/2021/05/3D-Chart.png)
-:::
-:::
-
-## The more, the merrier?{.scrollable}
+## Say no to 3D graphs! {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
-
-+ This graphic tries to show MLA salaries
-+ The information overload makes it look aesthetically unpleasant 
-+ With all the information, it looks difficult to understand
-+ Provided with such a visual, the audience would not be able to understand anything of substance
+-   3D graphs makes the visualizations redundant and complex for no reason
+-   The bars at the front hide the ones at the back.
+-   Other than looking flashy, they almost never serve the purpose of conveying information
+-   The tilt makes it even more difficult to read the values
 :::
 
 ::: {.column width="50%"}
-
-![Source: [jotform](https://www.jotform.com/blog/bad-data-visualization/)](https://www.jotform.com/blog/wp-content/uploads/2021/02/image-51.png)
+![Source: [Old Street Solutions](https://www.oldstreetsolutions.com/good+and+bad+data+visualization)](https://www.oldstreetsolutions.com/wp+content/uploads/2021/05/3D+Chart.png)
 :::
 :::
 
-## Misleading Visualization{.scrollable}
+## The more, the merrier? {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
-
-+ Massive growth in iPhone sales, isn’t it?
-+ However, a closer look shows that the sales are cumulative over time
-+ Cumulative sales don’t necessarily show growth
-+ Moreover, the graph does not have a scale on the y-axis
-+ It isn’t clear what the graph is trying to show
+-   This graphic tries to show MLA salaries
+-   The information overload makes it look aesthetically unpleasant
+-   With all the information, it looks difficult to understand
+-   Provided with such a visual, the audience would not be able to understand anything of substance
 :::
 
 ::: {.column width="50%"}
-
-![Source: [syntaxtechs](https://www.syntaxtechs.com/blog/data-visualization-examples#:~:text=Examples%20of%20Bad%20Data%20Visualization:%20Mistakes%20to%20Avoid,-After%20we%20have&text=Avoid%20using%20colors%20with%20negligible,people%20who%20might%20be%20colorblind)](https://assets-global.website-files.com/60078f9b9c5ea6f60974b74b/61bdf4dfb54a53fa47b4eba6_Blog%2049.11..png)
+![Source: [jotform](https://www.jotform.com/blog/bad+data+visualization/)](https://www.jotform.com/blog/wp+content/uploads/2021/02/image+51.png){width="1918"}
 :::
 :::
 
-## Avoid Pie Charts{.scrollable}
+## Misleading Visualization {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
-
-+ Pie chart, in most cases, are not the best approach to visualize data. 
-+ Not only do they add up to 100% in this case, they also make it difficult to comprehend which component has the biggest share
-+ When you choose a donut chart, you are essentially asking your audience to measure the arc length to see which has the biggest share
-+ Redundant, no? A simple bar chart would have done the job 
+-   Massive growth in iPhone sales, isn’t it?
+-   However, a closer look shows that the sales are cumulative over time
+-   Cumulative sales don’t necessarily show growth
+-   Moreover, the graph does not have a scale on the y+axis
+-   It isn’t clear what the graph is trying to show
 :::
 
 ::: {.column width="50%"}
-
-![Source: [jotform](https://www.jotform.com/blog/bad-data-visualization/)](https://www.jotform.com/blog/wp-content/uploads/2021/02/image-48.png)
+![Source: [syntaxtechs](https://www.syntaxtechs.com/blog/data+visualization+examples#:~:text=Examples%20of%20Bad%20Data%20Visualization:%20Mistakes%20to%20Avoid,-After%20we%20have&text=Avoid%20using%20colors%20with%20negligible,people%20who%20might%20be%20colorblind)](https://assets+global.website+files.com/60078f9b9c5ea6f60974b74b/61bdf4dfb54a53fa47b4eba6_Blog%2049.11..png)
 :::
 :::
 
-## Always a zero baseline{.scrollable}
+## Avoid Pie Charts {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
-
-+ There seems to be a major difference between democrats and republicans for percent of people who agreed with court
-+ However, at a closer look, the visualization has been made with a baseline of 50% which means that the difference is only around 8%
-+ Graphs must always be made with a zero baseline to not exaggerate the scale
+-   Pie chart, in most cases, are not the best approach to visualize data.
+-   Not only do they add up to 100% in this case, they also make it difficult to comprehend which component has the biggest share
+-   When you choose a donut chart, you are essentially asking your audience to measure the arc length to see which has the biggest share
+-   Redundant, no? A simple bar chart would have done the job
 :::
 
 ::: {.column width="50%"}
-
-![Source: [syntaxtechs](https://www.syntaxtechs.com/blog/data-visualization-examples#:~:text=Examples%20of%20Bad%20Data%20Visualization:%20Mistakes%20to%20Avoid,-After%20we%20have&text=Avoid%20using%20colors%20with%20negligible,people%20who%20might%20be%20colorblind)](https://assets-global.website-files.com/60078f9b9c5ea6f60974b74b/61bdf500194ffa8799a8400c_Blog%2049.13..jpg)
+![Source: [jotform](https://www.jotform.com/blog/bad+data+visualization/)](https://www.jotform.com/blog/wp+content/uploads/2021/02/image+48.png)
 :::
 :::
 
-## Data Visualization in R{.scrollable}
+## Always a zero baseline {.scrollable}
+
+::: columns
+::: {.column width="50%"}
+-   There seems to be a major difference between democrats and republicans for percent of people who agreed with court
+-   However, at a closer look, the visualization has been made with a baseline of 50% which means that the difference is only around 8%
+-   Graphs must always be made with a zero baseline to not exaggerate the scale
+:::
+
+::: {.column width="50%"}
+![Source: [syntaxtechs](https://www.syntaxtechs.com/blog/data+visualization+examples#:~:text=Examples%20of%20Bad%20Data%20Visualization:%20Mistakes%20to%20Avoid,-After%20we%20have&text=Avoid%20using%20colors%20with%20negligible,people%20who%20might%20be%20colorblind)](https://assets+global.website+files.com/60078f9b9c5ea6f60974b74b/61bdf500194ffa8799a8400c_Blog%2049.13..jpg)
+:::
+:::
+
+## Data Visualization in R {.scrollable}
 
 **What?**
 
@@ -116,27 +106,27 @@ editor: visual
 -   While exploring your data, you would want to see associations between variables to understand patterns in data
 -   For effective presentation of data
 
-## The ggplot2 package{.scrollable}
-#### [Content for this topic has been sourced from [Winston Chang's 'R Graphics Cookbook, 2nd edition'](https://r-graphics.org/chapter-ggplot2). Please check out the [work](https://r-graphics.org/) for detailed information.]{style="font-size:15px"}
+## The ggplot2 package {.scrollable}
+
+#### [Content for this topic has been sourced from [Winston Chang's 'R Graphics Cookbook, 2nd edition'](https://r+graphics.org/chapter+ggplot2). Please check out the [work](https://r+graphics.org/) for detailed information.]{style="font+size:15px"}
 
 ::: columns
 ::: {.column width="70%"}
 ::: incremental
-+ `ggplot2` takes a different approach to graphics than other plotting packages in R
-+ "Grammar of graphics" - provides a formal, structured perspective on how to describe data graphics
-
+-   `ggplot2` takes a different approach to graphics than other plotting packages in R
+-   "Grammar of graphics" - provides a formal, structured perspective on how to describe data graphics
 :::
 :::
 
 ::: {.column width="30%"}
-![Source : [ggplot2 logo from RStudio hexstickers repo](https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/ggplot2.png)](https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/ggplot2.png)
+![Source : [ggplot2 logo from RStudio hexstickers repo](https://raw.githubusercontent.com/rstudio/hex+stickers/master/thumbs/ggplot2.png)](https://raw.githubusercontent.com/rstudio/hex+stickers/master/thumbs/ggplot2.png)
 :::
 :::
 
-## Loading the packages{.scrollable}
+## Loading the packages {.scrollable}
 
-+ `tidyverse` is a collection of some R packages
-+ If you load tidyverse, no need to load `ggplot2` separately
+-   `tidyverse` is a collection of some R packages
+-   If you load tidyverse, no need to load `ggplot2` separately
 
 ```{r package_load}
 #| eval: true
@@ -146,40 +136,41 @@ library(tidyverse)
 library(ISLR2)
 ```
 
-+ Load the `diamonds` dataset from `ggplot2`
+-   Load the `diamonds` dataset from `ggplot2`
 
-## ggplot2 Terminology{.scrollable}
-#### [Content for this topic has been sourced from [Winston Chang's 'R Graphics Cookbook, 2nd edition'](https://r-graphics.org/chapter-ggplot2). Please check out his [work](https://r-graphics.org/) for detailed information.]{style="font-size:15px"}
+## ggplot2 Terminology {.scrollable}
+
+#### [Content for this topic has been sourced from [Winston Chang's 'R Graphics Cookbook, 2nd edition'](https://r+graphics.org/chapter+ggplot2). Please check out his [work](https://r+graphics.org/) for detailed information.]{style="font+size:15px"}
 
 Some of the terminologies used in ggplot2:
 
-+ `data`- what we want to visualize and consists of variables
-+  `Geoms` - geometric objects that are drawn to represent the data, such as bars, lines, and points
-+  `aesthetics` - visual properties of geoms, such as x and y position, line color, point shapes, etc
-+  There are `mappings` from data values to aesthetics
+-   `data`- what we want to visualize and consists of variables
+-   `Geoms` - geometric objects that are drawn to represent the data, such as bars, lines, and points
+-   `aesthetics` - visual properties of geoms, such as x and y position, line color, point shapes, etc
+-   There are `mappings` from data values to aesthetics
 
-## Building a plot{.scrollable}
+## Building a plot {.scrollable}
 
 **Task** - You want to plot a boxplot of `cut` and `depth`
 
 ```{r building_a_plot_1}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 ggplot(data = diamonds) #your plot area
 
 ```
 
-## Building a plot{.scrollable}
+## Building a plot {.scrollable}
 
 **Task** - You want to plot a boxplot of `cut` and `depth`
 
 ```{r building_a_plot_2}
 #| eval: true
 #| echo: true
-#| output-location: column
-#| code-line-numbers: "2|3|4"
+#| output+location: column
+#| code+line+numbers: "2|3|4"
 
 ggplot(data = diamonds) + # your plot area
   geom_boxplot(aes(cut, depth),
@@ -189,15 +180,15 @@ ggplot(data = diamonds) + # your plot area
 
 ```
 
-## Building a plot{.scrollable}
+## Building a plot {.scrollable}
 
 **Task** - You want to plot a boxplot of `cut` and `depth`
 
 ```{r building_a_plot_3}
 #| eval: true
 #| echo: true
-#| output-location: column
-#| code-line-numbers: "5"
+#| output+location: column
+#| code+line+numbers: "5"
 
 ggplot(data = diamonds) + # your plot area
   geom_boxplot(aes(cut, depth),
@@ -205,15 +196,15 @@ ggplot(data = diamonds) + # your plot area
   theme_minimal() #adding the theme
 ```
 
-## Building a plot{.scrollable}
+## Building a plot {.scrollable}
 
 **Task** - You want to plot a boxplot of `cut` and `depth`
 
 ```{r building_a_plot_4}
 #| eval: true
 #| echo: true
-#| output-location: column
-#| code-line-numbers: "6|7|8|9"
+#| output+location: column
+#| code+line+numbers: "6|7|8|9"
 
 ggplot(data = diamonds) + # your plot area
   geom_boxplot(aes(cut, depth),
@@ -225,23 +216,23 @@ ggplot(data = diamonds) + # your plot area
     )# labels
 ```
 
-## A Graphing Template{.scrollable}
-#### [Content for this topic has been sourced from [Hadley Wickham's 'R for Data Science'](https://r4ds.had.co.nz/data-visualisation.html). Please check out his [work](https://r4ds.had.co.nz/index.html) for detailed information.]{style="font-size:15px"}
+## A Graphing Template {.scrollable}
 
-+ A basic template for plotting a graph through `ggplot2` can be
+#### [Content for this topic has been sourced from [Hadley Wickham's 'R for Data Science'](https://r4ds.had.co.nz/data+visualisation.html). Please check out his [work](https://r4ds.had.co.nz/index.html) for detailed information.]{style="font+size:15px"}
 
-``` {r graphing_template}
+-   A basic template for plotting a graph through `ggplot2` can be
+
+```{r graphing_template}
 #| eval: false
 #| echo: true
 ggplot(data = <DATA>) + 
   <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
 ```
 
-## Plotting a....{.scrollable}
+## Plotting a.... {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
-
 **Continuous Variable**
 
 Plotting histogram of carat
@@ -256,7 +247,6 @@ ggplot(data = diamonds) +
 :::
 
 ::: {.column width="50%"}
-
 **Discrete Variable**
 
 Plotting a bar chart for cut
@@ -271,32 +261,31 @@ ggplot(data = diamonds) +
 :::
 :::
 
-## Scatterplots - Plotting two continuous variables{.scrollable}
+## Scatterplots - Plotting two continuous variables {.scrollable}
 
-+ Load the `Auto` dataset from `ISLR2` package 
+-   Load the `Auto` dataset from `ISLR2` package
 
 **Task** - You want to plot a scatterplot of `mpg` and `displacement`
 
 ```{r two_continuous}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 ggplot(data = Auto) +
   geom_point(aes(x = mpg, y = displacement)) 
   
 ```
 
-## Aesthetics{.scrollable}
+## Aesthetics {.scrollable}
 
-::: panel-tabset
-
+::: panel+tabset
 ### Shape
 
 ```{r two_continuous_shape}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 Auto$origin <- as.factor(Auto$origin)
   
@@ -312,7 +301,7 @@ ggplot(data = Auto) +
 ```{r two_continuous_colour}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 
 ggplot(data = Auto) +
@@ -327,7 +316,7 @@ ggplot(data = Auto) +
 ```{r two_continuous_size}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 
 ggplot(data = Auto) +
@@ -339,14 +328,14 @@ ggplot(data = Auto) +
 ```
 :::
 
-## Bar Charts - Plotting a discrete and a continuous variable{.scrollable}
+## Bar Charts - Plotting a discrete and a continuous variable {.scrollable}
 
 **Task** - You want to plot the mean number of `carat` by `cut` from `diamonds` dataset
 
 ```{r one_continuous_one_discrete}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 diamonds |>
   group_by(cut) |>
@@ -355,16 +344,15 @@ diamonds |>
   geom_col()
 ```
 
-## Formatting your Plor{.scrollable}
+## Formatting your Plor {.scrollable}
 
-::: panel-tabset
-
+::: panel+tabset
 ### Bar Customization
 
 ```{r one_continuous_one_discrete_bar}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 p1 <- diamonds |>
   group_by(cut) |>
@@ -380,7 +368,7 @@ p1
 ```{r one_continuous_one_discrete_reordering}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 p2 <- diamonds |>
   group_by(cut) |>
@@ -396,7 +384,7 @@ p2
 ```{r one_continuous_one_discrete_labels}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 p3 <- diamonds |>
   group_by(cut) |>
@@ -417,7 +405,7 @@ p3
 ```{r one_continuous_one_discrete_coord_flip}
 #| eval: true
 #| echo: true
-#| output-location: column
+#| output+location: column
 
 p4 <- diamonds |>
   group_by(cut) |>
@@ -434,14 +422,16 @@ p4 <- diamonds |>
 
 p4
 ```
-
 :::
 
-## Line Chart - Showing Trends Over Time{.scrollable}
+## Line Chart - Showing Trends Over Time {.scrollable}
 
-+ Use the `txhousing` data from `ggplot2`
+-   Use the `txhousing` data from `ggplot2`
 
 ```{r line_chart}
+#| eval: true
+#| echo: true
+#| output+location: column
 
 txhousing |>
   drop_na(sales) |>
@@ -452,9 +442,10 @@ txhousing |>
 ```
 
 ## Patchwork - Combine your plots{.scrollable}
-#### [Content for this topic has been sourced from [patchwork](https://patchwork.data-imaginist.com/index.html). Please check out the work for detailed information.]{style="font-size:15px"}
 
-+ After making all your plots, you can combine them using `patchwork`
+#### [Content for this topic has been sourced from [patchwork](https://patchwork.data+imaginist.com/index.html). Please check out the work for detailed information.]{style="font+size:15px"}
+
+-   After making all your plots, you can combine them using `patchwork`
 
 ```{r patchwork_load}
 #| eval: true
@@ -463,7 +454,7 @@ txhousing |>
 library(patchwork)
 ```
 
-+ It simply combines all your plots the way you want
+-   It simply combines all your plots the way you want
 
 ```{r patchwork_intro}
 #| eval: true
@@ -472,10 +463,11 @@ library(patchwork)
 p1 + p2 + p3+ p4
 ```
 
-## Patchwork - Combine your plots{.scrollable}
-#### [Content for this topic has been sourced from [patchwork](https://patchwork.data-imaginist.com/index.html). Please check out the work for detailed information.]{style="font-size:15px"}
+## Patchwork - Combine your plots {.scrollable}
 
-+ You can combine your plots in many ways
+#### [Content for this topic has been sourced from [patchwork](https://patchwork.data+imaginist.com/index.html). Please check out the work for detailed information.]{style="font+size:15px"}
+
+-   You can combine your plots in many ways
 
 ```{r patchwork_1}
 #| eval: true
@@ -484,7 +476,7 @@ p1 + p2 + p3+ p4
 p1 / p4
 ```
 
-+ Annotations can be also added 
+- Annotations can be also added
 
 ```{r patchwork_2}
 #| eval: true
@@ -499,4 +491,4 @@ my_patchwork + plot_annotation(
 
 ```
 
-## Thank You{.scrollable}
+## Thank You :){.center}

@@ -32,9 +32,7 @@ life_expectancy_female_male <- tuesdata$life_expectancy_female_male
 4. From `life_expectancy_different_ages`, create dataset `life_exp_ages` that calculates the mean life expectancy of countries for ages 0 and 80 for each year. Plot a line chart that shows the life expectancy of both ages
 5. From `life_expectancy`, plot a bar chart that shows the life expectancy of India, China, USA, UK, France, Brazil for the year 2021
 6. Plot a graph that shows the trend in difference between mean life expectancy of males and females over the years for United States and India. Combine them to show them side by side
-7. Can you replicate the following graph?
-
-<https://twitter.com/jayatisharmaa/status/1733493830702526945>
+7. Pick any 3-4 graphs that you think narrate a story. Combine them using patchwork and format appropriately.
 
 
 ```{r, include=FALSE}
